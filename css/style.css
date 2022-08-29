@@ -1,34 +1,36 @@
 .container{
-    background-color: #008000;
-    width: 600px;
-    height: 800px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 600px 400px;
-
+    background-color: #008000;   
+    position: relative; 
+    height: 500px;
+    width: 500px;
 }
-
 .square{
     height: 100px;
     width: 100px;
     background-color: orange;
-    display: flex;
+    position: absolute;
 }
-
 .circle{
-    height: 50%;
-    width: 50%;
+    height: 50px;
+    width: 50px;
     background-color: blue;
-    border-radius: 50%;
-    
+    border-radius: 50%;  
+    position: absolute;
 }
-
-.right{
-    
-    justify-content: flex-end;
+.top{
+    top: 0;
 }
-
 .bottom{
-    flex-wrap: wrap-reverse;
+    bottom: 0;
+}
+.left{
+    left: 0;
+}
+.right{
+    right: 0;
+}
+.cont{
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
